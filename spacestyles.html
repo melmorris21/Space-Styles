@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Space Styles</title>
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700|Barlow:400,700" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel='stylesheet' type='text/css' href='monochrome.css' id="styles">
+
+  <!-- Javascript -->
+  <script type="text/Javascript" src="stylechange.js"></script>
+</head>
+<body>
+  <!-- Site Header -->
+  <header role="banner" aria-label="site navigation" class="site-header">
+    <!-- Site Navigation -->
+    <nav role="navigation" class="site-navigation">
+      <ul class="site-header-left">
+        <li>
+            <button tag="colorMode" class="light" onclick="colorMode()">
+                <img src="images/light.png" alt="Light Mode - Sun Icon"/>
+            </button>
+            <button class="night">
+                <img src="images/night.png" alt="Night Mode - Moon Icon"/>
+            </button>
+            <button class="galaxy">
+                <img src="images/galaxy.png" alt="Galaxy Mode - Stars Icon"/>
+            </button>
+        </li>
+      </ul>
+      <ul class="site-header-right">
+        <li>
+          <a href="about.html">About NASA</a>
+        </li>
+        <li>
+          <a href="#" class="button button-primary">Set Color</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Site Main Content -->
+  <main role="main">
+    <!-- Main Content Header -->
+    <section role="region" aria-label="page-hero-title" class="page-hero-header">
+      <div class="container" >
+        <div class="page-hero-header-left">
+          <h1 id="page-hero-title">See How The Sky Changes</h1>
+          <p>Choose the way you want to see space</p>
+        </div>
+        <div class="overlay">
+            <div class="page-hero-header-right"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Main Content Benefits -->
+    <section role="region" class="main-content-benefits">
+      <div class="container">
+        <ul class="clearfix">
+          <li class="item">
+            <div class="item-image" href="nightskymap.html">
+                <img src="images/night.jpg" alt="Night Sky with Stars above Earth"/>
+            </div>
+            <h2>Night Sky Map</h2>
+            <p>Based on your location, this map will show you which planets and stars can be seen tonight.</p>
+          </li>
+          <li class="item">
+            <div class="item-image">
+                <img src="images/astronaut.jpg" alt="Astronaut in Space"/>
+            </div>
+            <h2>International Space Station</h2>
+            <p>The International Space Station (ISS) is a physical station that orbits the Earth for scientific research.</p>
+          </li>
+          <li class="item">
+            <div class="item-image">
+                <img src="images/aurora.jpg" alt="Aurora Borealis Green Lights in the Night Sky"/>
+            </div>
+            <h2>Aurora Finder</h2>
+            <p>Track the natural phenomenon known as the Northern Lights and learn more about what causes the aurora borealis</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Main Content Info -->
+    <section role="region" class="main-content-info">
+      <div class="mobile-show main-content-info-left">
+        <img class="mobile-show" src="https://content.codecademy.com/programs/ui-design/color-theory-lesson/color-theory-image-1.jpg" alt="Nebula"/>
+      </div>
+      <div class="container">
+        <div class="main-content-info-right">
+          <h2>Pictures of the Sky</h2>
+          <p>Skygazers from around the world share their photos</p>
+          <a href="#" class="button button-primary">See Images</a>
+        </div>
+      </div>
+    </section>
+    <!-- Main Content CTA -->
+    <section role="region" class="main-content-cta">
+      <div class="container">
+        <div class="main-content-cta-left">
+          <p>Constellations on the night you were born can determine your horoscope which can tell you more about your own personality!</p>
+        </div>
+        <div class="main-content-cta-right">
+          <div class="cta-container">
+            <input type="text" placeholder="Enter Your Name To Begin" />
+            <button type="submit" class="button button-secondary">Begin</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Site Footer -->
+  <footer role="contentinfo" class="footer clearfix">
+    <!-- Site Footer Nav -->
+    <nav role="navigation" class="footer-navigation">
+      <ul class="footer-left">
+        <li>
+          Designed &copy; 2023. Melissa Morris.
+        </li>
+      </ul>
+      <ul class="footer-right">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About NASA</a>
+        </li>
+        <li>
+          <a href="#">Begin Quiz</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
