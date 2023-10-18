@@ -12,10 +12,10 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700|Barlow:400,700" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel='stylesheet' type='text/css' href='monochrome.css' id="styles">
+  <link rel='stylesheet' type='text/css' href='global.css' id="styles">
 
   <!-- Javascript -->
-  <script type="text/Javascript" src="stylechange.js"></script>
+  <script type="text/Javascript" src="spacestyles.js"></script>
 </head>
 <body>
   <!-- Site Header -->
@@ -24,23 +24,23 @@
     <nav role="navigation" class="site-navigation">
       <ul class="site-header-left">
         <li>
-            <button tag="colorMode" class="light" onclick="colorMode()">
-                <img src="images/light.png" alt="Light Mode - Sun Icon"/>
+            <button id="lightMode" onclick="lightMode()">
+                <img src="images/sun.png" id="sun" alt="Light Mode - Sun Icon"/>
             </button>
-            <button class="night">
-                <img src="images/night.png" alt="Night Mode - Moon Icon"/>
+            <button id="darkMode" onclick="darkMode()">
+                <img src="images/moon.png" id="moon" alt="Night Mode - Moon Icon"/>
             </button>
-            <button class="galaxy">
-                <img src="images/galaxy.png" alt="Galaxy Mode - Stars Icon"/>
+            <button id="galaxyMode" onclick="galaxyMode()">
+                <img  src="images/space.png" id="stars" alt="Galaxy Mode - Stars Icon"/>
             </button>
         </li>
       </ul>
       <ul class="site-header-right">
         <li>
-          <a href="about.html">About NASA</a>
+          <a href="about.html">About Space Styles</a>
         </li>
         <li>
-          <a href="#" class="button button-primary">Set Color</a>
+          <a href="#" class="button button-primary">Subscribe</a>
         </li>
       </ul>
     </nav>
@@ -51,11 +51,12 @@
     <section role="region" aria-label="page-hero-title" class="page-hero-header">
       <div class="container" >
         <div class="page-hero-header-left">
-          <h1 id="page-hero-title">See How The Sky Changes</h1>
-          <p>Choose the way you want to see space</p>
+          <h1 id="page-hero-title">See How The Sky Changes</h1><br>
+          <p>Choose your color scheme above then explore the visual illusions of space</p>
         </div>
-        <div class="overlay">
-            <div class="page-hero-header-right"></div>
+        <div class="page-hero-header-right">
+          <span class="shooting-star"></span>
+          <img src="images/sunset.jpg"/>
         </div>
       </div>
     </section>
@@ -63,40 +64,61 @@
     <section role="region" class="main-content-benefits">
       <div class="container">
         <ul class="clearfix">
-          <li class="item">
-            <div class="item-image" href="nightskymap.html">
-                <img src="images/night.jpg" alt="Night Sky with Stars above Earth"/>
-            </div>
-            <h2>Night Sky Map</h2>
-            <p>Based on your location, this map will show you which planets and stars can be seen tonight.</p>
-          </li>
-          <li class="item">
-            <div class="item-image">
-                <img src="images/astronaut.jpg" alt="Astronaut in Space"/>
-            </div>
-            <h2>International Space Station</h2>
-            <p>The International Space Station (ISS) is a physical station that orbits the Earth for scientific research.</p>
-          </li>
-          <li class="item">
-            <div class="item-image">
-                <img src="images/aurora.jpg" alt="Aurora Borealis Green Lights in the Night Sky"/>
-            </div>
-            <h2>Aurora Finder</h2>
-            <p>Track the natural phenomenon known as the Northern Lights and learn more about what causes the aurora borealis</p>
-          </li>
+          <a href="nightskymap.html">
+            <li class="item">
+              <div class="item-image">
+                  <img src="images/night.jpg" alt="Night Sky with Stars above Earth"/>
+              </div>
+              <h2>Night Sky Map</h2>
+              <p>Based on your location, this map will show you which planets and stars can be seen tonight.</p>
+            </li>
+          </a>
+          <a href="internationalss.html">
+            <li class="item">
+              <div class="item-image">
+                  <img src="images/astronaut.jpg" alt="Astronaut in Space"/>
+              </div>
+              <h2>International Space Station</h2>
+              <p>The International Space Station (ISS) is a craft that orbits the Earth for scientific research.</p>
+            </li>
+          </a>
+          <a href="aurora.html">
+            <li class="item">
+              <div class="item-image">
+                  <img src="images/aurora.jpg" alt="Aurora Borealis Green Lights in the Night Sky"/>
+              </div>
+              <h2>Aurora Finder</h2>
+              <p>Track the natural phenomenon known as the Northern Lights and learn more about what causes the aurora borealis</p>
+            </li>
+          </a>
         </ul>
       </div>
     </section>
     <!-- Main Content Info -->
     <section role="region" class="main-content-info">
-      <div class="mobile-show main-content-info-left">
-        <img class="mobile-show" src="https://content.codecademy.com/programs/ui-design/color-theory-lesson/color-theory-image-1.jpg" alt="Nebula"/>
+      <div class=" main-content-info-left">
+       <div class="gallery">
+        <img src="images/sky1.jpg"/>
+        <img src="images/sky2.jpg"/>
+        <img src="images/sky3.jpg"/>
+        <img src="images/sky4.jpg"/>
+        <img src="images/sky5.jpg"/>
+        <img src="images/sky6.jpg"/>
+        <img src="images/sky7.jpg"/>
+        <img src="images/sky8.jpg"/>
+        <img src="images/sky9.jpg"/>
+        <img src="images/sky10.jpg"/>
+        <img src="images/sky11.jpg"/>
+        <img src="images/sky12.jpg"/>
+        <img src="images/sky13.jpg"/>
+        <img src="images/sky14.jpg"/>
+       </div>
       </div>
       <div class="container">
         <div class="main-content-info-right">
           <h2>Pictures of the Sky</h2>
-          <p>Skygazers from around the world share their photos</p>
-          <a href="#" class="button button-primary">See Images</a>
+          <p>NASA shares photographs from historical moments</p>
+          <a href="https://flickr.com/photos/nasacommons/" class="button button-primary">See Images</a>
         </div>
       </div>
     </section>
@@ -108,7 +130,7 @@
         </div>
         <div class="main-content-cta-right">
           <div class="cta-container">
-            <input type="text" placeholder="Enter Your Name To Begin" />
+            <input type="text" placeholder="Enter Your Birthday To Begin" />
             <button type="submit" class="button button-secondary">Begin</button>
           </div>
         </div>
@@ -131,10 +153,10 @@
           <a href="#">Home</a>
         </li>
         <li>
-          <a href="#">About NASA</a>
+          <a href="#">About Space Styles</a>
         </li>
         <li>
-          <a href="#">Begin Quiz</a>
+          <a href="#">Subscribe</a>
         </li>
       </ul>
     </nav>

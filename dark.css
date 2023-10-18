@@ -140,6 +140,17 @@ img {
 }
 .site-header-left li {
   line-height: 0;
+  margin: 10px;
+}
+.site-header-left li button {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+.site-header-left img { 
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
+
 }
 .site-header-right,
 .footer-right {
@@ -153,6 +164,15 @@ img {
 .site-header-right li a {
   text-decoration: none;
   margin-left: 20px;
+}
+#sun {
+  background-color: rgba(204, 103, 9, 0.24);
+}
+#moon {
+  background-color: #000000;
+}
+#stars {
+  background-color: hsla(218, 33%, 54%, 0.144);
 }
 
 /* Site Footer */
@@ -228,7 +248,6 @@ input {
 ======================================== */
 .page-hero-header {
   background-color: #627FB0; 
-  background-image: url('images/saturn-background.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -291,6 +310,12 @@ input {
   -moz-appearance: none;
   border: none;
 }
+.gallery img{
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
 
 /* Items */
 .item {
@@ -322,12 +347,19 @@ input {
     margin: 0 0 20px;
   }
   .main-content-info {
-    background-image: url('images/space-image.jpg');
     background-repeat: no-repeat;
     background-position: center left;
     background-size:50%;
     text-align: left;
+    height: 400px;
   }
+    .main-content-info-left {
+      max-height: 300px;
+      width: 50%;
+      overflow: hidden;
+      padding: 80px 0px 0px 80px;
+      position: absolute;
+    }
   .main-content-info-right {
     padding: 80px;
     width: 50%;
