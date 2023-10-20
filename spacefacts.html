@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Space Styles</title>
+  <title>Space Facts</title>
 
   <!-- Meta -->
   <meta charset="utf-8">
@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700|Barlow:400,700" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel='stylesheet' type='text/css' href='global.css' id="styles">
+  <link rel='stylesheet' type='text/css' href='/styles/global.css' id="styles">
 
   <!-- Javascript -->
   <script type="text/Javascript" src="spacestyles.js"></script>
@@ -24,23 +24,29 @@
     <nav role="navigation" class="site-navigation">
       <ul class="site-header-left">
         <li>
-            <button id="lightMode" onclick="lightMode()">
-                <img src="images/sun.png" id="sun" alt="Light Mode - Sun Icon"/>
-            </button>
-            <button id="darkMode" onclick="darkMode()">
-                <img src="images/moon.png" id="moon" alt="Night Mode - Moon Icon"/>
-            </button>
-            <button id="galaxyMode" onclick="galaxyMode()">
-                <img  src="images/space.png" id="stars" alt="Galaxy Mode - Stars Icon"/>
-            </button>
+              <a href="stars.html">
+                <button id="lightMode">
+                    <img src="images/sun.png" id="sun" alt="Light Mode - Stars Icon"/>
+                </button>
+              </a>
+              <a href="">
+                <button id="darkMode">
+                    <img src="images/moon.png" id="moon" alt="Night Mode - Moon Icon"/>
+                </button>
+              </a>
+              <a href="">
+                <button id="galaxyMode" a href="">
+                    <img  src="images/space.png" id="stars" alt="Galaxy Mode - Stars Icon"/>
+                </button>
+              </a>
         </li>
       </ul>
       <ul class="site-header-right">
         <li>
-          <a href="about.html">About Space Styles</a>
+          <a href="about.html">About Space Facts</a>
         </li>
         <li>
-          <a href="#" class="button button-primary">Subscribe</a>
+          <a href="#" class="button button-primary">Quiz</a>
         </li>
       </ul>
     </nav>
@@ -51,8 +57,8 @@
     <section role="region" aria-label="page-hero-title" class="page-hero-header">
       <div class="container" >
         <div class="page-hero-header-left">
-          <h1 id="page-hero-title">See How The Sky Changes</h1><br>
-          <p>Choose your color scheme above then explore the visual illusions of space</p>
+          <h1 id="page-hero-title">Space Facts</h1><br>
+          <p>Explore what makes Earth the planet home to life, and the stars and planets of our galaxy and how we study them</p>
         </div>
         <div class="page-hero-header-right">
           <span class="shooting-star"></span>
@@ -62,24 +68,27 @@
     </section>
     <!-- Main Content Benefits -->
     <section role="region" class="main-content-benefits">
+      <div class="container-title">
+        <h2>Flashcards</h2>
+      </div>
       <div class="container">
         <ul class="clearfix">
           <a href="nightskymap.html">
             <li class="item">
               <div class="item-image">
-                  <img src="images/night.jpg" alt="Night Sky with Stars above Earth"/>
+                  <img src="images/night.jpg" alt="Glaciers"/>
               </div>
-              <h2>Night Sky Map</h2>
-              <p>Based on your location, this map will show you which planets and stars can be seen tonight.</p>
+              <h2>Glaciers</h2>
+              <p>Where are they from and where are they going?</p>
             </li>
           </a>
           <a href="internationalss.html">
             <li class="item">
               <div class="item-image">
-                  <img src="images/astronaut.jpg" alt="Astronaut in Space"/>
+                  <img src="images/astronaut.jpg" alt=""/>
               </div>
-              <h2>International Space Station</h2>
-              <p>The International Space Station (ISS) is a craft that orbits the Earth for scientific research.</p>
+              <h2>National Disasters</h2>
+              <p>Learn more about the natural disasters around the globe</p>
             </li>
           </a>
           <a href="aurora.html">
@@ -87,8 +96,8 @@
               <div class="item-image">
                   <img src="images/aurora.jpg" alt="Aurora Borealis Green Lights in the Night Sky"/>
               </div>
-              <h2>Aurora Finder</h2>
-              <p>Track the natural phenomenon known as the Northern Lights and learn more about what causes the aurora borealis</p>
+              <h2>Layers of the Earth</h2>
+              <p>Hover to see the many layers surrounding Earth's core</p>
             </li>
           </a>
         </ul>
@@ -116,8 +125,8 @@
       </div>
       <div class="container">
         <div class="main-content-info-right">
-          <h2>Pictures of the Sky</h2>
-          <p>NASA shares photographs from historical moments</p>
+          <h2>Photographs of Our Planet</h2>
+          <p>Explore breathtaking geographical features</p>
           <a href="https://flickr.com/photos/nasacommons/" class="button button-primary">See Images</a>
         </div>
       </div>
@@ -126,12 +135,12 @@
     <section role="region" class="main-content-cta">
       <div class="container">
         <div class="main-content-cta-left">
-          <p>Constellations on the night you were born can determine your horoscope which can tell you more about your own personality!</p>
+          <p>Wonders of the World</p>
         </div>
         <div class="main-content-cta-right">
           <div class="cta-container">
-            <input type="text" placeholder="Enter Your Birthday To Begin" />
-            <button type="submit" class="button button-secondary">Begin</button>
+            <input type="text" placeholder="Start typing a country name to begin" />
+            <button type="submit" class="button button-secondary">Search</button>
           </div>
         </div>
       </div>
@@ -150,13 +159,13 @@
       </ul>
       <ul class="footer-right">
         <li>
-          <a href="#">Home</a>
+          <a href="spacefacts.html">Home</a>
         </li>
         <li>
-          <a href="#">About Space Styles</a>
+          <a href="about.html">About Space Facts</a>
         </li>
         <li>
-          <a href="#">Subscribe</a>
+          <a href="stars.html">Stars</a>
         </li>
       </ul>
     </nav>
