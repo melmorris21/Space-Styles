@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700|Barlow:400,700" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel='stylesheet' type='text/css' href='/styles/global.css' id="styles">
+  <link rel='stylesheet' type='text/css' href='styles/global.css' id="styles">
 
   <!-- Javascript -->
   <script type="text/Javascript" src="spacestyles.js"></script>
@@ -23,30 +23,41 @@
     <!-- Site Navigation -->
     <nav role="navigation" class="site-navigation">
       <ul class="site-header-left">
-        <li>
-              <a href="stars.html">
-                <button id="lightMode">
-                    <img src="images/sun.png" id="sun" alt="Light Mode - Stars Icon"/>
-                </button>
-              </a>
-              <a href="">
-                <button id="darkMode">
-                    <img src="images/moon.png" id="moon" alt="Night Mode - Moon Icon"/>
-                </button>
-              </a>
-              <a href="">
-                <button id="galaxyMode" a href="">
-                    <img  src="images/space.png" id="stars" alt="Galaxy Mode - Stars Icon"/>
-                </button>
-              </a>
+        <li class="page-title">
+          <h1>Explore Space Facts</h1>
         </li>
+        <li class="page stars">
+              <a href="stars.html">
+                <button>
+                    <img src="images/stars.png" id="stars" alt="Light Mode - Stars Icon"/>
+                </button>
+                <p class="caption">Stars</p>
+              </a>
+          </li>
+        </li>
+          <li class="page planets">
+              <a href="planets.html">
+                <button id="darkMode">
+                    <img src="images/planet.png" id="planet" alt="Night Mode - Planet Icon"/>
+                </button>
+                <p class="caption">Planets</p>
+              </a>
+          </li>
+          <li class="page spacecraft">
+              <a href="spacecraft.html">
+                <button id="galaxyMode">
+                    <img  src="images/rocket.png" id="rocket" alt="Galaxy Mode - Rocket Icon"/>
+                </button>
+                <p class="caption">Spacecraft</p>
+              </a>
+          </li>
       </ul>
       <ul class="site-header-right">
         <li>
           <a href="about.html">About Space Facts</a>
         </li>
         <li>
-          <a href="#" class="button button-primary">Quiz</a>
+            <button class="button button-primary" onclick="document.getElementById('earthquiz').style.display='block'" style="width:auto;">Quiz</button>
         </li>
       </ul>
     </nav>
@@ -55,51 +66,75 @@
   <main role="main">
     <!-- Main Content Header -->
     <section role="region" aria-label="page-hero-title" class="page-hero-header">
-      <div class="container" >
+      <div class="container main-panel">
         <div class="page-hero-header-left">
-          <h1 id="page-hero-title">Space Facts</h1><br>
-          <p>Explore what makes Earth the planet home to life, and the stars and planets of our galaxy and how we study them</p>
-        </div>
-        <div class="page-hero-header-right">
-          <span class="shooting-star"></span>
-          <img src="images/sunset.jpg"/>
+          <h2 id="page-hero-title">Planet Earth</h2><br>
+          <p>Learn trivia about Earth, the stars and planets of our galaxy, and how we study space</p>
         </div>
       </div>
     </section>
     <!-- Main Content Benefits -->
-    <section role="region" class="main-content-benefits">
+    <section role="region" class="flashcards">
       <div class="container-title">
         <h2>Flashcards</h2>
       </div>
       <div class="container">
-        <ul class="clearfix">
-          <a href="nightskymap.html">
-            <li class="item">
-              <div class="item-image">
-                  <img src="images/night.jpg" alt="Glaciers"/>
+        <ul class="clearfix cards">
+          
+          <li class="item">
+            <div class="item-image">
+              <div class="flashcard">
+                <div class="flashcard-inner">
+                  <div class="flashcard-front">
+                    <img src="images/glacier.jpg" alt="Glaciers"/>
+                    <h2>Glaciers</h2>
+                    <p>Where are they from and where are they going?</p>
+                  </div>
+                  <div class="flashcard-back">
+                    <h1>Glaciers</h1> 
+                    <p>Glaciers are slowly moving masses of ice formed by the accumulation and compaction of snow on mountains or near the poles</p> 
+                    <p>This may take several decades to hundreds of years, and climate change is melting 267 gigatons of ice every year</p>
+                  </div>
+                </div>
               </div>
-              <h2>Glaciers</h2>
-              <p>Where are they from and where are they going?</p>
-            </li>
-          </a>
-          <a href="internationalss.html">
-            <li class="item">
-              <div class="item-image">
-                  <img src="images/astronaut.jpg" alt=""/>
+            </div>
+          </li>
+
+          <li class="item">
+            <div class="item-image">
+              <div class="flashcard">
+                <div class="flashcard-inner">
+                  <div class="flashcard-front">
+                    <img src="images/wildfire.jpg" alt="Wildfire in field near forest"/>
+                    <h2>National Disasters</h2>
+                    <p>Learn more about the natural disasters around the globe</p>
+                  </div>
+                  <div class="flashcard-back">
+                    <h2>National Disasters</h2>
+                    <p>Learn more about the natural disasters around the globe</p>
+                  </div>
+                </div>
               </div>
-              <h2>National Disasters</h2>
-              <p>Learn more about the natural disasters around the globe</p>
-            </li>
-          </a>
-          <a href="aurora.html">
-            <li class="item">
-              <div class="item-image">
-                  <img src="images/aurora.jpg" alt="Aurora Borealis Green Lights in the Night Sky"/>
-              </div>
-              <h2>Layers of the Earth</h2>
+            </div>
+          </li>
+
+          <li class="item">
+            <div class="item-image">
+              <div class="flashcard">
+                <div class="flashcard-inner">
+                  <div class="flashcard-front">
+                    <img src="images/layers.png" alt="Layers of the Earth"/>
+                    <h2>Layers of the Earth</h2>
               <p>Hover to see the many layers surrounding Earth's core</p>
-            </li>
-          </a>
+                  </div>
+                  <div class="flashcard-back">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
         </ul>
       </div>
     </section>
@@ -107,20 +142,7 @@
     <section role="region" class="main-content-info">
       <div class=" main-content-info-left">
        <div class="gallery">
-        <img src="images/sky1.jpg"/>
-        <img src="images/sky2.jpg"/>
-        <img src="images/sky3.jpg"/>
-        <img src="images/sky4.jpg"/>
-        <img src="images/sky5.jpg"/>
-        <img src="images/sky6.jpg"/>
-        <img src="images/sky7.jpg"/>
-        <img src="images/sky8.jpg"/>
-        <img src="images/sky9.jpg"/>
-        <img src="images/sky10.jpg"/>
-        <img src="images/sky11.jpg"/>
-        <img src="images/sky12.jpg"/>
-        <img src="images/sky13.jpg"/>
-        <img src="images/sky14.jpg"/>
+        
        </div>
       </div>
       <div class="container">
@@ -146,7 +168,36 @@
       </div>
     </section>
   </main>
+<!-- Quiz Modal -->
+<div id="earthquiz" class="quiz">
+  <span onclick="document.getElementById('earthquiz').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="quiz-container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
 
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('earthquiz').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
 
   <!-- Site Footer -->
   <footer role="contentinfo" class="footer clearfix">
@@ -154,7 +205,7 @@
     <nav role="navigation" class="footer-navigation">
       <ul class="footer-left">
         <li>
-          Designed &copy; 2023. Melissa Morris.
+          Designed 2023. Melissa Morris. Images &copy; Pixabay.
         </li>
       </ul>
       <ul class="footer-right">
