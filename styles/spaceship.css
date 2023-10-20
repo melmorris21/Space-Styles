@@ -48,7 +48,7 @@ h6 {
   font-family: 'Barlow Condensed', Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.25;
-  margin-bottom: 15px;
+  margin: 20px;
   transition: font-size 0.25s ease;
   text-transform: uppercase;
 }
@@ -80,6 +80,7 @@ a {
   font-family: 'Barlow', Helvetica, sans-serif;
   font-size: 16px;
   color: #0D1C32;
+  text-decoration: none;
 }
 ul {
   padding: 0;
@@ -140,10 +141,16 @@ img {
 }
 .site-header-left li {
   line-height: 0;
+  margin: 10px;
 }
-.site-header-left img {
-    height: 100px;
-    width: 100px;
+.site-header-left li button {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+.site-header-left img { 
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
 }
 .site-header-right,
 .footer-right {
@@ -155,8 +162,46 @@ img {
   display: inline;
 }
 .site-header-right li a {
-  text-decoration: none;
-  margin-left: 20px;
+  text-decoration: wavy;
+  text-decoration-line: overline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: cornflowerblue;
+  margin: 20px;
+}
+.caption{
+  color: #FFFFFF;
+}
+.site-header-left .page:hover p.caption{
+  color: #000000;
+  font-size: 20px;
+  font-weight: 550;
+  text-align: center;
+}
+#stars {
+  background-color: rgb(255 202 0 / 24%);
+}
+#planet {
+  background-color: #c1abc5;
+}
+#rocket {
+  background-color: hsla(36.52 100% 50% / 38%);
+  padding: 5px;
+  width: 88px;
+}
+#stars:hover {
+  background-color: rgba(204, 103, 9, 0.815);
+}
+#planet:hover {
+  background-color: rgb(82, 56, 92);
+}
+#rocket:hover {
+  background-color: hsla(13, 20%, 55%, 0.404);
+  padding: 5px;
+  width: 88px;
+}
+
+.page {
+  display: inline-block;
 }
 
 /* Site Footer */
@@ -211,7 +256,7 @@ button:hover {
   opacity: 0.75;
 }
 .button-primary {
-  background-color: #0D1C32;
+  background-color: rgb(204, 103, 9);
   color: #FFFFFF;
 }
 .button-secondary {
@@ -231,43 +276,34 @@ input {
 /* 6. Page Styles
 ======================================== */
 .page-hero-header {
-  animation: transition 5s infinite alternate;
-  background-color: #627FB0; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   max-height: 600px;
-  overflow: hidden;
+
 }
 .page-hero-header-left, .page-hero-header-right {
-  width: 100%;
+  width: 50%;
   text-align: center;
-  display: block;
+  display: inline-block;
 }
 .page-hero-header-left {
   padding: 0px 40px;
   color: #FFFFFF;
 }
-.main-content-benefits {
-  padding: 80px 0;
-  background-color: #F5F9FF;
-}
-.main-content-benefits h2 {
-  color: #0D1C32;
-}
 .main-content-info {
   background-color: #627FB0;
   text-align: center;
+  height: 400px;
 }
 .main-content-info-left {
   max-height: 300px;
-  width: 100%;
+  width: 50%;
   overflow: hidden;
+  padding: 80px 0px 0px 80px;
+  position: absolute;
 }
 .main-content-info-right {
   padding: 60px;
   color: #FFFFFF;
-  width: 100%;
+  width: 50%;
 }
 .main-content-cta-left, .main-content-cta-right {
   width: 100%;
@@ -295,7 +331,19 @@ input {
   -moz-appearance: none;
   border: none;
 }
-
+.container-title{
+  text-align: center;
+}
+.gallery img{
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+.main-panel {
+  background-image: url('..//images/earthbg.png');
+}
+  
 /* Items */
 .item {
   margin-bottom: 30px;
@@ -309,6 +357,13 @@ input {
   border-radius: 10px;
   width: 100%;
   height: 250px;
+}
+.item .item-image img {
+  height: 200px;
+  max-width: fit-content;
+}
+.cards{
+  height: 400px;
 }
 @media(min-width: 720px) {
   .page-hero-header-left, .page-hero-header-right {
@@ -354,8 +409,130 @@ input {
     margin-right: 2.5%;
   }
 
-  @keyframes transition {
-    from {background-color: #627FB0;}
-    to {background-color: #0D1C32;}
+  /* Flashcards */
+  .flashcard {
+    background-color: transparent;
+    perspective: 1000px;
   }
+  
+  .flashcard-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flashcard:hover .flashcard-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flashcard-front, .flashcard-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flashcard-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flashcard-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+/*Quiz*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.quiz-container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.quiz {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
 }

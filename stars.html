@@ -23,34 +23,44 @@
     <!-- Site Navigation -->
     <nav role="navigation" class="site-navigation">
       <ul class="site-header-left">
-        <li>
-            <a href="">
-              <button id="lightMode">
-                  <img src="images/sun.png" id="sun" alt="Light Mode - Sun Icon"/>
-              </button>
-            </a>
-            <a href="">
-              <button id="darkMode">
-                  <img src="images/moon.png" id="moon" alt="Night Mode - Moon Icon"/>
-              </button>
-            </a>
-            <a href="">
-              <button id="galaxyMode" a href="">
-                  <img  src="images/space.png" id="stars" alt="Galaxy Mode - Stars Icon"/>
-              </button>
-            </a>
+        <li class="page-title">
+          <h1>Stars</h1>
         </li>
+        <li class="page home">
+              <a href="spacefacts.html">
+                <button>
+                    <img src="images/earth.png" id="home" alt="Light Mode - Earth Icon"/>
+                </button>
+                <p class="caption">Home Planet</p>
+              </a>
+          </li>
+        </li>
+          <li class="page planets">
+              <a href="planets.html">
+                <button id="darkMode">
+                    <img src="images/planet.png" id="planet" alt="Night Mode - Planet Icon"/>
+                </button>
+                <p class="caption">Planets</p>
+              </a>
+          </li>
+          <li class="page spacecraft">
+              <a href="spacecraft.html">
+                <button id="galaxyMode">
+                    <img  src="images/rocket.png" id="rocket" alt="Galaxy Mode - Rocket Icon"/>
+                </button>
+                <p class="caption">Spacecraft</p>
+              </a>
+          </li>
       </ul>
       <ul class="site-header-right">
         <li>
-          <a href="about.html">About</a>
+          <a href="about.html">About Space Facts</a>
         </li>
         <li>
-          <a href="#" class="button button-primary">Quiz</a>
+            <button class="button button-primary" onclick="document.getElementById('earthquiz').style.display='block'" style="width:auto;">Quiz</button>
         </li>
       </ul>
     </nav>
   </header>
-<h1>Stars</h1>
 </body>
 </html>

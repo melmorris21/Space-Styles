@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700|Barlow:400,700" rel="stylesheet">
   
   <!-- CSS -->
-  <link rel='stylesheet' type='text/css' href='/styles/global.css' id="styles">
+  <link rel='stylesheet' type='text/css' href='styles/global.css' id="styles">
 
   <!-- Javascript -->
   <script type="text/Javascript" src="spacestyles.js"></script>
@@ -23,26 +23,53 @@
     <!-- Site Navigation -->
     <nav role="navigation" class="site-navigation">
       <ul class="site-header-left">
-        <li>
-            <button id="lightMode" onclick="lightMode()">
-                <img src="images/sun.png" id="sun" alt="Light Mode - Sun Icon"/>
-            </button>
-            <button id="darkMode" onclick="darkMode()">
-                <img src="images/moon.png" id="moon" alt="Night Mode - Moon Icon"/>
-            </button>
-            <button id="galaxyMode" onclick="galaxyMode()">
-                <img  src="images/space.png" id="stars" alt="Galaxy Mode - Stars Icon"/>
-            </button>
+        <li class="page-title">
+          <h1>About Space Facts</h1>
         </li>
+        <li class="page home">
+          <a href="spacefacts.html">
+            <button>
+                <img src="images/earth.png" id="home" alt="Light Mode - Earth Icon"/>
+            </button>
+            <p class="caption">Home Planet</p>
+          </a>
+      </li>
+        <li class="page stars">
+              <a href="stars.html">
+                <button>
+                    <img src="images/stars.png" id="stars" alt="Light Mode - Stars Icon"/>
+                </button>
+                <p class="caption">Stars</p>
+              </a>
+          </li>
+        </li>
+          <li class="page planets">
+              <a href="planets.html">
+                <button id="darkMode">
+                    <img src="images/planet.png" id="planet" alt="Night Mode - Planet Icon"/>
+                </button>
+                <p class="caption">Planets</p>
+              </a>
+          </li>
+          <li class="page spacecraft">
+              <a href="spacecraft.html">
+                <button id="galaxyMode">
+                    <img  src="images/rocket.png" id="rocket" alt="Galaxy Mode - Rocket Icon"/>
+                </button>
+                <p class="caption">Spacecraft</p>
+              </a>
+          </li>
       </ul>
       <ul class="site-header-right">
         <li>
-          <a href="about.html">About Space Styles</a>
+          <a href="spacefacts.html">Home Planet</a>
+        </li>
+        <li>
+            <button class="button button-primary" onclick="document.getElementById('earthquiz').style.display='block'" style="width:auto;">Quiz</button>
         </li>
       </ul>
     </nav>
   </header>
-  <h1>About Space Facts</h1>
   <h2>Inspiration</h2>
   <div class="about-section-left"></div>
   <div class="about-section right">

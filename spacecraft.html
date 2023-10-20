@@ -12,42 +12,108 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700|Barlow:400,700" rel="stylesheet">
   
   <!-- CSS -->
-  <link rel='stylesheet' type='text/css' href='global.css' id="styles">
+  <link rel='stylesheet' type='text/css' href='styles/spaceship.css' id="styles">
 
   <!-- Javascript -->
   <script type="text/Javascript" src="spacestyles.js"></script>
 </head>
 <body>
-    <!-- Site Header -->
-    <header role="banner" aria-label="site navigation" class="site-header">
-      <!-- Site Navigation -->
-      <nav role="navigation" class="site-navigation">
-        <ul class="site-header-left">
-          <li>
-              <button id="lightMode" onclick="lightMode()">
-                  <img src="images/sun.png" id="sun" alt="Light Mode - Sun Icon"/>
-              </button>
-              <button id="darkMode" onclick="darkMode()">
-                  <img src="images/moon.png" id="moon" alt="Night Mode - Moon Icon"/>
-              </button>
-              <button id="galaxyMode" onclick="galaxyMode()">
-                  <img  src="images/space.png" id="stars" alt="Galaxy Mode - Stars Icon"/>
-              </button>
+   <!-- Site Header -->
+  <header role="banner" aria-label="site navigation" class="site-header">
+    <!-- Site Navigation -->
+    <nav role="navigation" class="site-navigation">
+      <ul class="site-header-left">
+        <li class="page-title">
+          <h1>Spacecraft</h1>
+        </li>
+        <li class="page stars">
+              <a href="stars.html">
+                <button>
+                    <img src="images/stars.png" id="stars" alt="Light Mode - Stars Icon"/>
+                </button>
+                <p class="caption">Stars</p>
+              </a>
           </li>
-        </ul>
-        <ul class="site-header-right">
-          <li>
-            <a href="about.html">About Space Styles</a>
+        </li>
+          <li class="page planets">
+              <a href="planets.html">
+                <button id="darkMode">
+                    <img src="images/planet.png" id="planet" alt="Night Mode - Planet Icon"/>
+                </button>
+                <p class="caption">Planets</p>
+              </a>
           </li>
-          <li>
-            <a href="#" class="button button-primary">Subscribe</a>
+          <li class="page spacecraft">
+              <a href="spacecraft.html">
+                <button id="galaxyMode">
+                    <img  src="images/rocket.png" id="rocket" alt="Galaxy Mode - Rocket Icon"/>
+                </button>
+                <p class="caption">Spacecraft</p>
+              </a>
           </li>
-        </ul>
-      </nav>
-    </header>
-<h1>Spacecraft</h1>
+      </ul>
+      <ul class="site-header-right">
+        <li>
+          <a href="about.html">About Space Facts</a>
+        </li>
+        <li>
+            <button class="button button-primary" onclick="document.getElementById('earthquiz').style.display='block'" style="width:auto;">Quiz</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
 <iframe src="https://eyes.nasa.gov/apps/earth/?embed=true" title="Explore in 3D—Eyes on the Earth" class="smd-iframe-iframe margin-left-auto margin-right-auto border-0" allow="fullscreen" data-gtm-yt-inspected-6="true">
   Unable to render the provided source
 </iframe>
+<!-- Quiz Modal -->
+<div id="spaceshipquiz" class="quiz">
+  <span onclick="document.getElementById('spaceshipquiz').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="quiz-container">
+      <h1>Spacecraft Quiz</h1>
+      <p>This is a quiz about spaceships.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('spaceshipquiz').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+  <!-- Site Footer -->
+  <footer role="contentinfo" class="footer clearfix">
+    <!-- Site Footer Nav -->
+    <nav role="navigation" class="footer-navigation">
+      <ul class="footer-left">
+        <li>
+          Designed 2023. Melissa Morris. Images &copy; Pixabay.
+        </li>
+      </ul>
+      <ul class="footer-right">
+        <li>
+          <a href="spacefacts.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Space Facts</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>

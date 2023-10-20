@@ -19,31 +19,61 @@
 </head>
 <body>
   <!-- Site Header -->
+  <!-- Site Header -->
   <header role="banner" aria-label="site navigation" class="site-header">
     <!-- Site Navigation -->
     <nav role="navigation" class="site-navigation">
       <ul class="site-header-left">
-        <li>
-            
+        <li class="page-title">
+          <h1>Planets</h1>
         </li>
+        <li class="page home">
+          <a href="spacefacts.html">
+            <button>
+                <img src="images/earth.png" id="home" alt="Light Mode - Earth Icon"/>
+            </button>
+            <p class="caption">Home Planet</p>
+          </a>
+      </li>
+        <li class="page stars">
+              <a href="stars.html">
+                <button>
+                    <img src="images/stars.png" id="stars" alt="Light Mode - Stars Icon"/>
+                </button>
+                <p class="caption">Stars</p>
+              </a>
+          </li>
+        </li>
+
+          <li class="page spacecraft">
+              <a href="spacecraft.html">
+                <button id="galaxyMode">
+                    <img  src="images/rocket.png" id="rocket" alt="Galaxy Mode - Rocket Icon"/>
+                </button>
+                <p class="caption">Spacecraft</p>
+              </a>
+          </li>
       </ul>
       <ul class="site-header-right">
-        
+        <li>
+          <a href="about.html">About Space Facts</a>
+        </li>
+        <li>
+            <button class="button button-primary" onclick="document.getElementById('earthquiz').style.display='block'" style="width:auto;">Quiz</button>
+        </li>
       </ul>
     </nav>
   </header>
-<h1>Planets</h1>
 <main role="main">
   <!-- Main Content Header -->
   <section role="region" aria-label="page-hero-title" class="page-hero-header">
     <div class="container" >
       <div class="page-hero-header-left">
-        <h2 id="page-hero-title">Home Planet Earth</h2><br>
-        <p>Explore what makes Earth home to life, the stars and planets of our galaxy, and how we study space</p>
+        <h2 id="page-hero-title">Planets of the Milky Way</h2><br>
+        <p>Scroll to see the 8 planets of Earth's galaxy</p>
       </div>
       <div class="page-hero-header-right">
         <span class="shooting-star"></span>
-        <img src="images/sunset.jpg"/>
       </div>
     </div>
   </section>
